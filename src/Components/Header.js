@@ -41,10 +41,10 @@ function Header() {
       .getRedirectResult()
       .then(function (result) {
         if (result.credential) {
-          var token = result.credential.accessToken;
+          let token = result.credential.accessToken;
           console.log(token);
         }
-        var user = result.user;
+        let user = result.user;
         console.log(user);
       });
     const provider = new firebase.auth.GoogleAuthProvider();
